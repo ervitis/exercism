@@ -11,11 +11,9 @@ class Scrabble {
        Map.entry(8, List.of("J", "X")),
        Map.entry(10, List.of("Q", "Z"))
     ));
-    int points;
+    int points = 0;
 
     Scrabble(String word) {
-        this.points = 0;
-
         if (word.trim().isBlank()) {
             return;
         }
